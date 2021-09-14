@@ -1,0 +1,278 @@
+
+
+
+.tel {
+    position: absolute;
+    top: 50px;
+    right: 10%;
+  }
+
+ 
+  
+  .image {
+    margin-top: 20px;
+    margin-bottom: -7px;
+    width: 400px;
+    height: 80px;
+  }
+  
+  .icon {
+    width: 14px;
+    height: 19px;
+  }
+  
+  .titre-connexion-espace {
+    text-align: center;
+  }
+  
+  .gtitle {
+    font-size: 33px;
+    margin: auto;
+    width: 250px;
+  }
+  
+  .primary-color {
+    color: #95c01f;
+  }
+  
+ 
+  
+  .form-group label {
+    font-size: 14px;
+    color: #777;
+  }
+  label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input {
+    width: 450px;
+    font-size: 13px;
+    height: 60px;
+    border: 1px solid rgba(184, 198, 221, 1);
+    border-radius: 10px;
+    background-color: rgba(250, 252, 254, 1);
+    padding: 10px 10px;
+    font-family: Muli-SemiBold;
+    color: #455d83;
+    margin-top: 10px;
+    display: block;
+    
+  }
+  
+  .secondary-color {
+    color: #95c01f;
+  }
+  
+  .border-link {
+    font-size: 16px;
+  }
+  
+  .btn-orange {
+    position: relative;
+    background: #9ebf43 !important;
+  }
+  .btn-orange:hover {
+    background: #3e8155bd !important;
+  }
+  
+
+  
+  button,
+  input {
+    overflow: visible;
+  }
+  
+  .fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  .text {
+    top: 518px;
+    left: 146px;
+    width: 100px;
+    height: 19px;
+    text-align: center;
+    font: normal normal bold 16px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  .border-link-2 {
+    font-size: 14px;
+  }
+  
+  .black-bouton {
+    color: #000;
+    position: relative;
+    font-weight: 600;
+    font-size: 15px;
+    font: normal normal 600 18px/23px Muli;
+    top: 39px;
+}
+  
+  
+  
+  
+  .text-login{
+    text-align: left;
+    font: normal normal 600 24px/30px Muli;
+    letter-spacing: 0px;
+    color: #1D3152;
+    width: 323px;
+    margin-left: 15px;
+    
+    
+    
+  }
+  
+  .icon-text{
+    margin-left:15px;
+  }
+  
+  .text-login1{
+    text-align: left;
+  font: normal normal normal 18px/23px Muli1;
+  letter-spacing: 0px;
+  color: #1D3152;
+  opacity: 1;
+  }
+  .regle{
+    margin-left: 80px;
+  }
+  
+  
+    .box-tel {
+      display: inline-block;
+      width: 200px;
+      height: 80px;
+      text-align: center;
+      background: #f7ab34 0% 0% no-repeat padding-box;
+      border-radius: 10px;
+      padding: 20px;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: Muli-SemiBold;
+      color: #fff;
+      max-width: 180px;
+      left: 75%;
+      position: absolute;
+      top: 36px;
+    }
+  
+    .text-login{
+      text-align: left;
+      font: normal normal 600 24px/30px Muli;
+      letter-spacing: 0px;
+      color: #1D3152;
+      width: 323px;
+      margin-left: 80px;
+      
+      
+      
+    }
+  
+  
+    .icon-text{
+      margin-left:60px;
+    }
+  
+    .box-tel:before {
+      position: absolute;
+      font: 14px fontawesome;
+      content: "\f095";
+      top: 27px;
+      left: 15px;
+      font-size: 20px;
+    }
+  
+    .box-tel span {
+      color: #191d38;
+    }
+  
+    p {
+      margin-top: 0;
+      margin-bottom: 1rem;
+    }
+  
+   
+  
+   
+  
+    .dashbord {
+      background: #f0f4f8 !important;
+    }
+    .dashbord .arriere-footer {
+      background: #07101f;
+      padding: 15px;
+      z-index: 999;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+  
+    .dashbord .copyright {
+      font-size: 8px;
+      line-height: 14px;
+      font-family: Muli-SemiBold;
+      color: #455d83;
+      padding-top: 10px;
+      text-align: left;
+    }
+  
+    .gtitle {
+      font-size: 50px;
+      width: 720px;
+    }
+  
+    .bouton-continuer {
+      border: none !important;
+      border-radius: 10px !important;
+      color: white !important;
+      height: 60px !important;
+      width: 250px !important;
+      text-transform: none;
+      display: inline-block;
+      cursor: pointer !important;
+      font-size: 14px !important;
+      font-family: Muli-Bold;
+      line-height: 19px;
+      background: #3e8155 !important;
+      bottom: -1px;
+    }
+  
+    .back-connexion {
+      margin: auto;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px 20px !important;
+      box-shadow: 0px 0px 15px rgb(29 49 82 / 30%);
+      width: 515px  !important;
+      height : 340px;
+    
+    }
+  
+  
+  @media screen and (min-width: 1200px) {
+    .dashbord .copyright {
+      font-size: 14px !important;
+      line-height: 18px;
+      font-family: Muli-semiBold;
+      color: #455d83;
+      padding-top: 10px;
+      text-align: right;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  

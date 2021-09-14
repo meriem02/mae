@@ -1,0 +1,148 @@
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="singnup.component.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  
+  <title>block</title>
+</head>
+
+<body >
+  <div class="container">
+    <div class="row  ">
+      <div class="col-12">
+        <div class=" text-left  ">
+
+          <a href="">
+            <img class="image" src="assets/logofr.svg"
+              alt="MAE">
+          </a>
+        </div>
+      </div>
+      
+
+
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="form-login text-center mt-3">
+      <div class="row">
+        <div class="col-12">
+          <div class="titre-cordonnes no-border ">
+
+            <div class="gtitle titre-connexion-espace mb-5  ">
+              Créer un 
+              <span class="primary-color"> nouveau compte</span>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-10  back-connexion">
+          <div class="row">
+           
+            <div class=" col-12">
+            <div class="col-12 mb-1">
+              <div class="form-group black mb-2 mt-4 ">
+                <label><b> Nom d'utilisateur</b></label>
+                <input class="my-1 " id="_username" type="text" placeholder="" name="_username"  [(ngModel)]="user.username" required=""
+                  autocomplete="off" style="margin: auto;">
+              </div>
+            </div>
+            <div class="col-12 mb-2">
+              <div class="form-group black mb-2">
+                <label><b>Email</b></label>
+                <input class="my-1" id="_email" type="text" placeholder="" name="_email"[(ngModel)]="user.email" required=""
+                  autocomplete="off" style="margin: auto;">
+              </div>
+
+            </div>
+
+            <div class="col-12 mb-2">
+                <div class="form-group black mb-2">
+                  <label><b>Mot de passe</b></label>
+                  <input class="my-1" id="_password" type="password" placeholder="" name="_password"[(ngModel)]="user.password" required=""
+                    autocomplete="off" style="margin: auto;">
+                </div>
+  
+              </div>
+
+              <div class="col-12 mb-2">
+                <div class="form-group black mb-2">
+                  <label><b>Confirmer le mot de passe</b></label>
+                  <input class="my-1" id="_password" type="password" placeholder="" name="_password"[(ngModel)]="user.confirmedPassword" required=""
+                    autocomplete="off" style="margin: auto;">
+                </div>
+  
+              </div>
+            
+            
+          </div>
+        </div>
+        <div class="col-10 mx-auto ">
+            <button routerLinkActive="active" [routerLink]="['']" type="submit" id="login_botton" 
+              class="bouton-continuer mt-1 btn btn-block btn-orange lunchloaderModal  reload" (click)="ajouter()" value="">
+              <span class="text"> SE CONNECTER</span>
+              <i class="fa fa-angle-right ml-3"></i></button>
+ 
+      
+      </div>
+
+      
+      </div>
+
+     
+
+    </div>
+
+    
+
+
+
+  </div>
+ 
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+        
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>
