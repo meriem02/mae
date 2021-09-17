@@ -144,8 +144,8 @@ body{
   transition: all 0.4s ease;
 }
 .sidebar ul li a:hover{
-  color: #11101d;
-  background: #fff;
+  color:#fff;
+  background: #000;
 }
 .sidebar ul li i{
   font-size: 18px;
@@ -204,7 +204,7 @@ body{
   border-radius: 12px;
 }
 .profile .profile_details .name_job{
-  margin-left:20px;
+  margin-left: 10px;
 }
 .profile .profile_details .name{
   font-size: 15px;
@@ -216,10 +216,10 @@ body{
 .profile #log_out{
   position: absolute;
   bottom: 5px;
-  left: 10%;
+  left: 50%;
   transform: translateX(-50%);
-  min-width: 10px;
-  line-height: 60px;
+  min-width: 50px;
+  line-height: 50px;
   font-size: 20px;
   border-radius: 12px;
   text-align: center;
@@ -236,7 +236,7 @@ body{
   position: relative;
   height: 100%;
   width: calc(100% - 78px);
-  left: 0px;
+  left:78px;
   background: #E4E9F7;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2px);
   transition : all 0.5s ease
@@ -255,61 +255,3 @@ body{
   left: 240px;
 }
 
-body{
-    margin-top:10px;
-   min-width: 140vh; 
-   width: 100%;
-   height: 120vh;
-    color: #1a202c;
-    text-align: left;
-    background-color: #e2e8f0;    
-    margin-left: 0px;
-}
-.main-body {
-    padding: 0px;
-}
-.card {
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
-}
-
-.card {
-    position: relative;
-    display: flex;
-    margin-left: -10px;
-    flex-direction: column;
-    min-width: 190vh;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 0 solid rgba(0,0,0,.125);
-    border-radius: .25rem;
-}
-
-.card-body {
-    flex: 1 1 auto;
-    min-height: 1px;
-   
-}
-
-.gutters-sm {
-    margin-right: -8px;
-    margin-left: -8px;
-}
-
-.gutters-sm>.col, .gutters-sm>[class*=col-] {
-    padding-right: 8px;
-    padding-left: 8px;
-}
-.mb-3, .my-3 {
-    margin-bottom: 1rem!important;
-}
-
-.bg-gray-300 {
-    background-color: #e2e8f0;
-}
-.h-100 {
-    height: 100%!important;
-}
-.shadow-none {
-    box-shadow: none!important;
-}

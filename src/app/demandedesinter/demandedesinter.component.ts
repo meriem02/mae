@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { APIService } from '../services/api.service';
 import { AuthenticationService } from '../services/authentication.service';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { SnotifyService } from 'ng-snotify';
 
 @Component({
   selector: 'app-demandedesinter',
@@ -22,10 +21,7 @@ demandeadmin:any={}
   constructor(private auth:AuthenticationService,
     private authservice:AuthenticationService,private router:Router,
     private service : APIService,
-    private http : HttpClient ,
-    private snotifyService: SnotifyService
-
-    ) { }
+    private http : HttpClient) { }
 
   ngOnInit(): void {
     this.auth.loadToken()
@@ -51,7 +47,7 @@ demandeadmin:any={}
     Isactive(){
       this.demande.etat=true;
     }
-   
+    
   superadmin(){
     return  this.auth.isSuperadmin()
    }

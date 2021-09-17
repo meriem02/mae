@@ -10,7 +10,6 @@ import { SingnupComponent } from './login/singnup/singnup.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ReparationComponent } from './reparation/reparation.component';
 import { AdminComponent } from './admin/admin.component';
-import { ProfilComponent } from './profil/profil.component';
 import { DemandetraiterComponent } from './demandetraiter/demandetraiter.component';
 import { DemandedesinterComponent } from './demandedesinter/demandedesinter.component';
 import { HistoriqueComponent } from './historique/historique.component';
@@ -21,11 +20,7 @@ import { DemandestockComponent } from './demandestock/demandestock.component';
 import { StockComponent } from './stock/stock.component';
 import { Chart1Component } from './chart1/chart1.component';
 import { ChartsModule } from 'ng2-charts';
-import { SnotifyModule, SnotifyService, ToastDefaults } from 'ng-snotify';
-import { TestComponent } from './test/test.component';
-import { NotifComponent } from './notif/notif.component';
-
-
+import { ProfilComponent } from './profil/profil.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +30,6 @@ import { NotifComponent } from './notif/notif.component';
     DashboardComponent,
     ReparationComponent,
     AdminComponent,
-    ProfilComponent,
     DemandetraiterComponent,
     DemandedesinterComponent,
     HistoriqueComponent,
@@ -44,8 +38,10 @@ import { NotifComponent } from './notif/notif.component';
     DemandestockComponent,
     StockComponent,
     Chart1Component,
-    TestComponent,
-    NotifComponent,
+    ProfilComponent,
+    
+
+
   
     
    
@@ -57,12 +53,9 @@ import { NotifComponent } from './notif/notif.component';
     HttpClientModule,
     BrowserAnimationsModule,
    ChartsModule,
-   SnotifyModule
-   
 
   ],
-  providers: [ { provide: 'SnotifyToastConfig', useValue: ToastDefaults},
-  SnotifyService],
+  providers: [],
   bootstrap: [AppComponent]
 
 })

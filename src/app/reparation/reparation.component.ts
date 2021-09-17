@@ -1,9 +1,8 @@
 import { HttpClient } from '@angular/common/http';
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { APIService } from '../services/api.service';
 import { AuthenticationService } from '../services/authentication.service';
-
 
 @Component({
   selector: 'app-reparation',
@@ -11,6 +10,7 @@ import { AuthenticationService } from '../services/authentication.service';
   styleUrls: ['./reparation.component.css']
 })
 export class ReparationComponent implements OnInit {
+  
 demande:any={}
   constructor(
     private http : HttpClient,
@@ -23,11 +23,11 @@ demande:any={}
 
   ngOnInit(): void {
   }
+  
   ajouter(){
+    console.log("message envoyer")
     console.log(this.demande)
     return this.http.post('http://localhost:8080/add',this.demande).subscribe()
-    
-
       }
 
       superadmin(){

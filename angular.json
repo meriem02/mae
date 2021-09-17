@@ -30,7 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ng-snotify/styles/material.scss",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -98,7 +98,7 @@
               "src/assets"
             ],
             "styles": [
-            
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
 
             ],

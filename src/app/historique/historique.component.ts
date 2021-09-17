@@ -10,6 +10,8 @@ import { AuthenticationService } from '../services/authentication.service';
 })
 export class HistoriqueComponent implements OnInit {
   demandes:any={}
+  username: any;
+  users: any;
   constructor(private auth:AuthenticationService,
     private authservice:AuthenticationService,private router:Router,
     private service : APIService,) { }
@@ -19,9 +21,22 @@ export class HistoriqueComponent implements OnInit {
     this.auth.loadToken()
     this.service.getDemande().subscribe(
       data => this.demandes=data)
-    
+      this.service.getUser().subscribe(
+        data => this.users=data
+      )
     
   }
+  Search(){
+    if (this.username ==''){
+      this.ngOnInit();
+  
+    }else {
+      this.users =this.users.filter ((res: { username: string; }) => {
+        return res.username.toLocaleLowerCase().match(this.username.toLocaleLowerCase());
+      })
+    }
+  
+   }
   superadmin(){
     return  this.auth.isSuperadmin()
    }

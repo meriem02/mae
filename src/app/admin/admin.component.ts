@@ -24,6 +24,18 @@ username:any={}
       data => this.users=data
     )
   }
+  dropdown() {
+    let batt: any = document.querySelector(".rounded-circle");
+    let drop: any = document.querySelector(".dropdown-menu dropdown-menu show");
+
+    drop.classList.toggle("active");
+    if (batt.classList.contains("dropdown-menu dropdown-menu ")) {
+      batt.classList.replace("dropdown-menu dropdown-menu ");
+    } else {
+      batt.classList.replace( "dropdown-menu dropdown-menu");
+    }
+  }
+
   superadmin(){
     return  this.auth.isSuperadmin()
    }
@@ -72,4 +84,8 @@ username:any={}
     }
   
    }
+   
+  logout() {
+    this.auth.logout()
+  }
 }
