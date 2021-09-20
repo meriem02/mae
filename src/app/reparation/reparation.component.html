@@ -201,25 +201,26 @@
                 <title>formulaire bootstrap </title>
             </head>
             <body>
-              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid blue; width: 100%; padding: 2% ;" > 
-                <h1> <font color = "blue" > John Doe </font> </h1>
+              <br>
+              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid green; width: 80%; padding: 2% ;" > 
+                <h1> <font color = "green" > John Doe </font></h1>
                 <br>
                 <div class="row">
                     <table>
-                <label class="form-control" placeholder="votre reclamation">Réclamation :  </label>
-                <input type="text" name="rec" [(ngModel)]="demande.reclamation">
+                <label class="center h1" placeholder="votre reclamation">Réclamation :  </label>
+                <input class="inputbox" type="text" name="rec" [(ngModel)]="demande.reclamation">
                 <br>
                 <br>
-                <label class="form-control" placeholder="votre Matricule ">Matricule :  </label>
-                <input type="text" name="mat" [(ngModel)]="demande.nom">
+                <label class="center h1" placeholder="votre Matricule ">Matricule :  </label>
+                <input class="inputbox" type="text" name="mat" [(ngModel)]="demande.nom">
                 <br>
                 <br>
-                 <label class="form-control" placeholder="votre date ">Date : </label>
-                  <input type="date" name="date" [(ngModel)]="demande.date">
+                 <label class="center h1"  placeholder="votre date "> Date : </label>
+                  <input class="inputbox" type="date" name="date" [(ngModel)]="demande.date">
                   <br>
                   <br>
-            <label class="form-control" placeholder="votre direction ">Direction : </label>
-            <select name="dir" [(ngModel)]="demande.direction">
+            <label class="center h1"  placeholder="votre direction ">Direction : </label>
+            <select  class="inputbox" name="dir" [(ngModel)]="demande.direction">
                <optgroup>
               
                  <option>DSI</option>
@@ -229,8 +230,8 @@
             </select>
             <br>
             <br>
-            <label class="form-control" placeholder="votre materiel " >Matériels : </label>
-            <select name="mat" [(ngModel)]="demande.materiel">
+            <label class="center h1" placeholder="votre materiel " >Matériels :  </label>
+            <select class="inputbox" name="mat" [(ngModel)]="demande.materiel">
               <optgroup>
                 <option>Imprimante</option>
                 <option>Souris</option>
@@ -239,12 +240,11 @@
            </select>
            <br>
            <br>
-           <label class="form-control" placeholder="votre panne ">Panne : </label>
-           <textarea type="text" name="panne" [(ngModel)]="demande.crepine"></textarea>
+           <label class="center h1"  placeholder="votre panne ">Panne : </label>
+           <input class="inputbox" type="text" name="panne" [(ngModel)]="demande.crepine">
            <br>
            <br>
-
-           <div class="col-12">
+           <div>
             <button class="btn btn-primary" (click)= "ajouter()"  type="submit" >envoyer</button> 
              <button class="btn btn-primary" type="reset" >annuler</button>
 

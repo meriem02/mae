@@ -255,3 +255,39 @@ body{
   width: calc(100% - 240px);
   left: 240px;
 }
+table thead tr  {
+  background-color: #3e8155;
+  color: #ffffff;
+  text-align:center;
+  padding: 10px;
+  height: 50px;
+  width: 150%;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+th, td {
+  padding: 20px;
+  font-size: large;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  padding-left: 150px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+}
+.center{
+font: 0em sans-serif;
+font-size: 30px;
+  color: #3e8155;
+}
+
+ .btn-primary:hover{
+  background: linear-gradient(45deg, #9ebf43,#3e8155);
+   font-size: 20px;
+   border-color: #3e8155;
+ }
+ .btn-primary{
+   background-color:#3e8155;
+   border-color: #3e8155;
+   margin: 13px 13px ;
+ }

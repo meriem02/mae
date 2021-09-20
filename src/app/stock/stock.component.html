@@ -199,20 +199,22 @@
                 <title>formulaire bootstrap </title>
             </head>
             <body>
-              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid blue; width: 100%; padding: 2% ;" > 
-                <h1> <font color = "blue" > John Doe </font> </h1>
+              <br>
+              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid green; width: 80%; padding: 2% ;" > 
+                <br>
+                <h1> <font color = "green" > John Doe </font> </h1>
                 <br>
                 <div class="row">
                     <table>
-                <label class="form-control" placeholder="votre reclamation"> Ref Matériel :  </label>
+                <label class="center h1" placeholder="votre reclamation"> Ref Matériel :  </label>
                 <input type="text" name="ref" [(ngModel)]="stock.refmateriel">
                 <br>
                 <br>
-                 <label class="form-control" placeholder="votre date ">Date : </label>
+                 <label class="center h1" placeholder="votre date ">Date : </label>
                   <input type="date" name="date" [(ngModel)]="stock.date">
                   <br>
                   <br>
-            <label class="form-control" placeholder="votre materiel " >Matériels : </label>
+            <label class="center h1" placeholder="votre materiel " >Matériels : </label>
             <select name="mat" [(ngModel)]="stock.nommateriel">
               <optgroup>
                 <option>Imprimante</option>
@@ -222,13 +224,14 @@
            </select>
            <br>
            <br>
-           <label class="form-control" placeholder="votre panne ">Quantités: </label>
+           <label class="center h1" placeholder="votre panne ">Quantités: </label>
            <input type="text" name="quant" [(ngModel)]="stock.quantite">
            <br>
            <br>
-           <label class="form-control" placeholder="votre panne ">Disponibilité: </label>
+           <label class="center h1" placeholder="votre panne ">Disponibilité: </label>
            <input type="text" name="dis"[(ngModel)]="stock.disponibilite">
-
+<br>
+<br>
            <div class="col-12">
             <button class="btn btn-primary" (click)= "ajouter()"  type="submit">envoyer</button> 
              <button class="btn btn-primary" type="reset" >annuler</button>

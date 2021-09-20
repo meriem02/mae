@@ -213,20 +213,21 @@
                 <title>formulaire bootstrap </title>
             </head>
             <body>
-              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid blue; width: 100%; padding: 2% ;" > 
-                <h1> <font color = "blue" > John Doe </font> </h1>
+              <br>
+              <form name="formulaire bootstrap " method="post" action="" style="border: 2px solid green; width: 80%; padding: 2% ;" > 
+                <h1> <font color = "green" > John Doe </font> </h1>
                 <br>
                 <div class="row">
                     <table>
-                <label class="form-control" placeholder="votre  Ref matériel ">Ref Matériel:  </label>
+                <label class="center h1" placeholder="votre  Ref matériel ">Ref Matériel:  </label>
                 <input type="text" name="ref" [(ngModel)]="equipement.refmateriel">
                 <br>
                 <br>
-                 <label class="form-control" placeholder="votre date ">Date : </label>
+                 <label class="center h1" placeholder="votre date ">Date : </label>
                   <input type="date" name="date" [(ngModel)]="equipement.date">
                   <br>
                   <br>
-            <label class="form-control" placeholder="votre materiel " >Matériels : </label>
+            <label class="center h1" placeholder="votre materiel " >Matériels : </label>
             <select name="mat" [(ngModel)]="equipement.materiel">
               <optgroup>
                 <option>Imprimante</option>
@@ -236,7 +237,7 @@
            </select>
            <br>
            <br>
-           <label class="form-control" placeholder="votre distination ">Déstination : </label>
+           <label class="center h1" placeholder="votre distination ">Déstination : </label>
             <select name="dist" [(ngModel)]="equipement.distination">
                <optgroup>
                  <option>TECHNIQUE</option>
@@ -244,12 +245,12 @@
             </select>
            <br>
            <br>
-           <label class="form-control" placeholder="votre Quantités ">Quantités : </label>
+           <label class="center h1" placeholder="votre Quantités ">Quantités : </label>
            <input type="text" name="quan"  [(ngModel)]="equipement.quantite">
                     
            <br>
            <br>
-           <div class="col-12">
+           <div class="center h1">
             <button class="btn btn-primary" (click)= "ajouter()"  type="submit">envoyer</button> 
              <button class="btn btn-primary" type="reset" >annuler</button>
 
